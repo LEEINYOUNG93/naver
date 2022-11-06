@@ -1,0 +1,458 @@
+@import './reset.css';
+@import './common.css';
+
+
+.wrapper {
+  min-width: 1190px;
+  /* 최소 보장되어야되는 width(화살표포함) */
+}
+
+/* 헤더 */
+.header {}
+
+.header .group-flex1 {
+  width: 1130px;
+  height: 160px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.header .logo {
+  width: 222px;
+  height: 52px;
+  background-position: 0 -158px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.header .logo a {
+  display: block;
+  height: 100%;
+}
+
+.header .search-area {
+  position: absolute;
+  top: 50%;
+  left: 268px;
+  margin-top: -28px;
+  width: 582px;
+  height: 52px;
+  border: 2px solid #19ce60;
+  -webkit-border-radius: 2px;
+  /* (chrome,safari,firefox) */
+  border-radius: 2px;
+}
+
+.header .search-area .input-text {
+  width: 444px;
+  height: 24px;
+  padding: 13px 15px;
+  margin: 1px;
+  background-color: #fff;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000;
+  font-weight: 700;
+  outline: 0;
+}
+
+.header .search-area .btn-submit {
+  position: absolute;
+  top: -2px;
+  right: -1px;
+  bottom: 0;
+  width: 56px;
+  height: 56px;
+  background-color: #19ce60;
+  -webkit-border-radius: 0 2px 2px 0;
+  border-radius: 0 2px 2px 0;
+  cursor: pointer;
+}
+
+.header .search-area .btn-submit::after {
+  /* 정확한 크기가 필요하기때문에 태그를만듬 */
+  content: '';
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  background-position: -420px 0;
+}
+
+.header .service-area {
+  position: absolute;
+  top: 12px;
+  right: 27px;
+}
+
+.header .service-area>* {
+  float: left;
+}
+
+.header .service-area .link-start::after {
+  content: '';
+  width: 26px;
+  height: 26px;
+  display: inline-block;
+  background-position: -308px -345px;
+  vertical-align: top;
+  margin: -3px 0 0 3px;
+}
+
+.header .service-area .bar {
+  width: 1px;
+  height: 10px;
+  margin: 3px 7px;
+  background: #ccc;
+}
+
+.header .service-area .link-junior {}
+
+.header .service-area .link-junior::after {
+  content: '';
+  display: inline-block;
+  width: 60px;
+  height: 10px;
+  background-position: -262px -330px;
+  background-repeat: no-repeat;
+  vertical-align: top;
+  margin: 3px 3px 2px;
+}
+
+.header .service-area .link-bin {}
+
+.header .service-area .link-bin::after {
+  content: '';
+  display: inline-block;
+  width: 34px;
+  height: 11px;
+  background-position: -380px -199px;
+  background-repeat: no-repeat;
+  vertical-align: top;
+  margin: 3px 3px 2px;
+}
+
+.header .group-flex2 {
+  border-top: 1px solid #e4e8eb;
+  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 12%);
+}
+
+.header .group-flex2 .inner {
+  width: 1130px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+.header .group-flex2 .inner::after {
+  content: '';
+  clear: both;
+  display: block;
+}
+
+.header .gnb-area {
+  float: left;
+}
+
+.header .gnb-area .gnb-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header .gnb-area .gnb-item {
+  /* float: left; */
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 52px;
+  color: #19ce60;
+}
+
+.header .gnb-area .gnb-item:nth-child(n+9) {
+  color: #000;
+}
+
+.header .gnb-area .mail::before {
+  content: '';
+  display: inline-block;
+  width: 21px;
+  height: 21px;
+  background-position: -420px -73px;
+  margin: 3px 9px 0 0;
+}
+
+.header .gnb-area .live::before {
+  content: '';
+  display: block;
+  width: 54px;
+  height: 20px;
+  background-position: -202px -299px;
+}
+
+
+
+.header .gnb-area .gnb-item+.gnb-item {
+  margin-left: 12px;
+}
+
+.header .gnb-area .btn-more{
+  float: left;
+  margin-left: 17px;
+  font-size: 13px;
+  line-height: 30px;
+  color: #202020;
+  text-align: right;
+}
+
+.header .gnb-area .btn-more::after{
+  display: inline-block;
+  width: 11px;
+  height: 7px;
+  background-position: -444px -339px;
+  content: '';
+  margin-left: 7px;
+  vertical-align: 2px;
+}
+
+.header .weather-area {
+  float: right;
+  overflow: hidden;
+}
+
+.header .weather-area .weather-item{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 270px;
+  height: 52px;
+  position: relative;
+}
+
+.header .weather-area .weather-item .weather-list{
+  font-size: 12px;
+  color: #808080;
+}
+
+.header .weather-area .bar{
+  width: 1px;
+  height: 10px;
+  margin: 3px 7px;
+  background: #ccc;
+}
+
+.header .weather-area .weather-item .weather-list .icon{
+  color: #000;
+  font-weight: bold;
+  font-size: 13px;
+}
+
+.header .weather-area .weather-item .weather-list .icon::before{
+  content: '';
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  background-position: -420px -286px;
+  vertical-align: top;
+}
+
+
+
+
+
+/* 큰 틀 */
+
+.container {
+  width: 1130px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+.container::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* overflow:hidden을 사용하면 float해제는 가능하나
+.container의 영역에서 화살표는 넘쳐있기때문에 내용이잘림 
+float해제방법
+1.overflow:hidden
+2.div.class를 만들어서 clear:both처리(효율성X)
+3.부모요소에 after(가상)로 만듬*/
+
+
+/* 푸터 */
+
+.footer {
+  background-color: #fafbfc;
+  border-top: 1px solid #e4e8eb;
+}
+
+.footer .footer-inner {
+  width: 1130px;
+  padding: 0 30px 92px;
+  margin: 0 auto;
+}
+
+.footer .footer-inner .banner-area {
+  overflow: hidden;
+  padding: 24px 0;
+  border-bottom: 1px solid #e4e8eb;
+}
+
+.footer .footer-inner .banner-area .banner1 {
+  float: left;
+}
+
+.footer .footer-inner .banner-area .banner2 {
+  float: left;
+  margin-left: 40px;
+}
+
+.footer .footer-inner .banner-area .banner3 {
+  float: left;
+  margin-left: 40px;
+}
+
+.footer .footer-inner .notice-area {
+  overflow: hidden;
+  padding: 16px 0 15px;
+  border-bottom: 1px solid #e4e8eb;
+}
+
+.footer .footer-inner .notice-area .notice-box {
+  float: left;
+}
+
+.footer .footer-inner .notice-area .notice-box .title {}
+
+.footer .footer-inner .notice-area .link-all {
+  float: right;
+  font-weight: 700;
+  color: #333;
+}
+
+.footer .footer-inner .notice-area .link-all:after {
+  content: '';
+  display: inline-block;
+  width: 8px;
+  height: 12px;
+  background-position: -444px -268px;
+  margin-left: 10px;
+  vertical-align: -2px;
+}
+
+.footer .aside-area {
+  overflow: hidden;
+  border-bottom: 1px solid #e4e8eb;
+}
+
+.footer .aside-area .partner {
+  float: left;
+  width: 780px;
+  padding: 20px 0;
+}
+
+.footer .aside-area .partner .partner-box {
+  overflow: hidden;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.footer .aside-area .partner .partner-box+.partner-box {
+  margin-top: 9px;
+}
+
+.footer .aside-area .partner .partner-box .title {
+  float: left;
+  width: 87px;
+  color: #202020;
+  font-weight: bold;
+}
+
+.footer .aside-area .partner .partner-box .link-partner {
+  float: left;
+  color: #777;
+}
+
+.footer .aside-area .partner .partner-box .link-partner+.link-partner:before {
+  content: '';
+  display: inline-block;
+  width: 1px;
+  height: 11px;
+  background-color: #e4e8eb;
+  vertical-align: -1px;
+  margin: 0 8px;
+}
+
+.footer .service {
+  overflow: hidden;
+  float: right;
+  width: 350px;
+  padding: 28px 0;
+}
+
+.footer .service .service-box {
+  overflow: hidden;
+  float: left;
+  max-width: 150px;
+}
+
+.footer .service .service-box+.service-box {
+  margin-left: 50px;
+}
+
+.footer .service .service-box .service-logo {
+  float: right;
+  margin-left: 12px;
+}
+
+.footer .service .service-info {
+  overflow: hidden;
+  float: left;
+}
+
+.footer .service .service-info .title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  display: block;
+  padding-top: 2px;
+  font-weight: bold;
+}
+
+.footer .service .service-info .txt {
+  color: #808080;
+  padding: 2px 0 0;
+}
+
+.footer .corp-area {
+  padding-top: 25px
+}
+
+.footer .corp-area .list-corp {
+  overflow: hidden;
+  float: left;
+  margin-right: 13px;
+}
+
+.footer .corp-area .list-corp .corp-item {
+  float: left;
+  color: #777;
+}
+
+.footer .corp-area .list-corp .corp-item+.corp-item::before {
+  content: '';
+  display: inline-block;
+  width: 1px;
+  height: 11px;
+  margin: 0 8px;
+  background-color: #e4e8eb;
+  vertical-align: -1px;
+}
+
+.footer .corp-area .addr {
+  float: left;
+  color: #202020;
+  font-weight: 700;
+}

@@ -1,0 +1,76 @@
+/* 공용 공통 */
+
+body {
+  font-size: 12px;
+  line-height: 16px;
+  color: #202020;
+  font-family: -apple-system, BlinkMacSystemFont, "Malgun Gothic", "맑은 고딕", helvetica, "Apple SD Gothic Neo", sans-serif; 
+  /* sans-serif:고딕 / serif:궁서 */
+
+}
+
+.blind {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  /* clip:요소의 특정부분만 보이게하는 속성 */
+  margin: -1px;
+}
+
+.header .logo,
+.header .search-area .btn-submit::after,
+.header .service-area>a::after,
+.header .gnb-area .mail::before,
+.header .gnb-area .live::before,
+.sc-news .group-title .link-title::after,
+.sc-news .group-issue .link-media::after,
+.sc-news .group-title .set-area>*::after,
+.header .weather-area .weather-item .weather-list .icon::before,
+.sc-login .link-login::before,
+.header .gnb-area .btn-more::after,
+.sc-login .sub-area .link-id::before,
+.sc-login .sub-area .link-join::before,
+.sc-timesquare .navi-area .btn-navi.prev::before,
+.sc-timesquare .navi-area .btn-navi.next::before,
+.sc-news .group-title .link-title::before,
+.content-container .group-txt .info-area .btn-set::before,
+.group-category .main-category .theme-prev .ico-btn,
+.group-category .main-category .theme-next .ico-btn,
+.group-media .media-inner .media-view .media-play::before,
+.group-vedio .vedio-view .vedio-area .vedio-thumb .vedio-play::before,
+.group-vedio .vedio-area .ico-btn::before,
+.group-funding .fun-title .title::after,
+.group-funding .fd-wrap .ico-btn::before,
+.btn-more-wrap .btn-more .ico-more::before,
+.footer .footer-inner .notice-area .link-all:after{
+  background-image: url(../images/sp-bg.png);
+  background-size: 457px;
+  background-repeat: no-repeat;
+}
+
+/* sp-bg:traffic의 속도가빠름
+원본사이즈가 아니라 2배더큼 > 모바일에서 봤을때 선명
+dpi:Dot Per Inch(디지털이미지의 깨끗함) */
+
+.group-title .trend .link-shop::before,
+.group-title .trend .link-shop::after,
+.content .group-goods .shop-control .btn-area .btn-box.prev::before,
+.content .group-goods .shop-control .btn-area .btn-box.next::before,
+.content .group-goods .shop-page .btn-prev::before,
+.content .group-goods .shop-page .btn-next::before,
+.content .group-news .news-control .btn-box .btn-prev::before,
+.content .group-news .news-control .btn-box .btn-next::before,
+.content .group-cate .cate-control .btn-box .btn-prev::before,
+.content .group-cate .cate-control .btn-box .btn-next::before,
+.content .group-deal .deal-title .title .link-logo::before,
+.content .group-deal .deal-title .deal-control .btn-box .btn-prev::before,
+.content .group-deal .deal-title .deal-control .btn-box .btn-next::before,
+.content .group-deal .list-deal .deal-item .deal-area .deal-thumb .thumb-box::before
+{
+  background-image: url(../images/st-bg.png);
+  background-size: 107px;
+  background-repeat: no-repeat;
+}
+
